@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+/*=====================Nav Bar=================*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.kontainer{
+    width: 100%;
+    min-height: 20vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 130px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+
+.menu-icon{
+    width: 35px;
+    cursor: pointer;
+    display: none;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+}
+nav ul li a:hover{
+    color: #ff5ea2;
+}
+.hero-nav{
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    min-height: 105px;
+    background-size: cover;
+    background-position: center;
+    filter: hue-rotate(80deg);
+    position: relative;
+    overflow: hidden;
+}
+.hero-nav__inner{
+    z-index: 1;
+}
+h1{
+    color: #efefef;
+    font-size: 5vw;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 2px 8px #FF0000;
+    border-bottom: 5px solid;
+}
+.page-content{
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: relative;
+    margin-top: 20vw;
+    width: 50em;
+    margin: 0 auto;
+    line-height: 1.625;
+}
+.page-content img{
+    width: 50em;
+    height: 300px;
+}
+
+a{
+    text-decoration: none;
+}
+/*======================TESTIMONI BOX====================*/
+#testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 40px;
+}
+.testimonials-heading{
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.testimonials-heading h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-shadow: none;
+}
+.testimonials-heading h2{
+    color: gold;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.testimonials-heading span{
+    font-size: 1.3rem;
+    color: #252525;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.testimonial-heading-span{
+    font-size: 1.3rem;
+    color: #252525;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.testimonial-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.testimonial-box{
+    width: 500px;
+    box-shadow: 4px 4px 30px rgba(0,0,0,0.1);
+    background-color: #F7fbfb;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+.reviews{
+    color: gold;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.client-comment p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+}
+
+
+
+/*=================KOMEN BOX=============================*/
+.wadah{
+  position: relative;
+  margin-top: 20px;
+  margin-left: 32%;
+  width: 400px;
+  background: #F7fbfb;
+  padding: 20px 30px;
+  border-radius: 5px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 4px 4px 30px rgba(0,0,0,0.1);
+}
+.wadah .post{
+  display: none;
+}
+.wadah .text{
+  font-size: 25px;
+  color: #666;
+  font-weight: 500;
+}
+.wadah .edit{
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 16px;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+}
+.wadah .edit:hover{
+  text-decoration: underline;
+}
+.wadah .hapus{
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  font-size: 16px;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+}
+.wadah .hapus:hover{
+  text-decoration: underline;
+}
+.wadah .star-widget input{
+  display: none;
+}
+.star-widget label{
+  font-size: 40px;
+  color: #444;
+  padding: 10px;
+  float: right;
+  transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+  color: #fd4;
+}
+input:checked ~ label{
+  color: #fd4;
+}
+input#rate-5:checked ~ label,
+input#rate-4:checked ~ label,
+input#rate-3:checked ~ label,
+input#rate-2:checked ~ label,
+input#rate-1:checked ~ label{
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
+#rate-1:checked ~ form header:before{
+  content: "Sangat Tidak Suka ";
+}
+#rate-2:checked ~ form header:before{
+  content: "Tidak Suka ";
+}
+#rate-3:checked ~ form header:before{
+  content: "Lumayan ";
+}
+#rate-4:checked ~ form header:before{
+  content: "Suka ";
+}
+#rate-5:checked ~ form header:before{
+  content: "Sangat Suka ";
+}
+.wadah form{
+  display: block;
+}
+input:checked ~ form{
+  display: block;
+}
+form header{
+  width: 100%;
+  font-size: 25px;
+  color: #222;
+  font-weight: 500;
+  margin: 5px 0 20px 0;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+form .textarea{
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+form .textarea textarea{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #eee;
+  background: #222;
+  padding: 10px;
+  font-size: 17px;
+  resize: none;
+}
+.textarea textarea:focus{
+  border-color: #444;
+}
+form .btn{
+  height: 45px;
+  width: 100%;
+  margin: 15px 0;
+}
+form .btn button{
+  height: 100%;
+  width: 100%;
+  border: 1px solid #444;
+  outline: none;
+  background: #222;
+  color: #999;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form .btn button:hover{
+  background: #1b1b1b;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(44, 158, 211);
+    height: 35vh;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #ffff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: auto;
+    line-height: 28px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: aqua;
+}
+.footer-bottom{
+    background-color: rgb(38, 130, 173);
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+
+
+@media only screen and (max-width: 700px){
+    .kontainer{
+        margin-bottom: 25vh;
+    }
+    nav ul{
+        width: 100%;
+        background: linear-gradient(#fff, #8381ff);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        text-shadow: 2px 2px 4px #000000;
+        color: #fff;
+    }
+    .logo{
+        width: 85px;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .page-content {
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: relative;
+        width: 24em;
+    }
+    .page-content img{
+        width: 24em;
+        height: 200px;
+    }
+    h1{
+        font-size: 10vw;
+    }
+    .hero-nav{
+        position: absolute;
+        top: 15vh;
+        height: 540px;
+    }
+    #menuList{
+       overflow: hidden;
+       transition: 0.5s; 
+    }
+    .testimonials-heading h1{
+        font-size: 30px;
+    }
+    .wadah{
+        width: 200px;
+        margin-left: 18%;
+    }
+    .star-widget label{
+        font-size: 20px;
+    }
+    .kontainer{
+        min-height: 80vh;
+    }
+    .wadah .text{
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+
