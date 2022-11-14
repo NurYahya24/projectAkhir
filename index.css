@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+/*=====================Nav Bar=================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.kontainer{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 130px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+
+.menu-icon{
+    width: 35px;
+    cursor: pointer;
+    display: none;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+}
+nav ul li a:hover{
+    color: #ff5ea2;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-1 h2{
+    font-size: 64px;
+}
+.col-1 h3{
+    font-size: 25px;
+    color: #707070;
+    font-weight: 100;
+}
+
+.col-1 p{
+    margin: 15px 0;
+    font-size: 20px;
+}
+button{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: #8381ff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+button:hover{
+    width: 160px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: #000000;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.col-1::after{
+    content: '';
+    width: 10px;
+    height: 60%;
+    background: #8381ff;
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+.col-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.col-2 .gambarHome{
+    width: 70%;
+}
+.color-box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url("image/backHome.jpg") no-repeat center;
+    background-size: cover;
+    filter: hue-rotate(300deg);
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transform: translate(200px);
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(44, 158, 211);
+    height: 35vh;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #ffff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: auto;
+    line-height: 28px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: aqua;
+}
+.footer-bottom{
+    background-color: rgb(38, 130, 173);
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+
+.container{
+    display: flex;
+    margin: 0;
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 8px;
+    background: #fff;
+    row-gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.progress-value{
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    color: #7d2ae8;
+}
+.text{
+    font-size: 30px;
+    font-weight: 500;
+    color: #606060;
+}
+
+
+
+@media only screen and (max-width: 700px){
+    nav ul{
+        width: 100%;
+        background: linear-gradient(#fff, #8381ff);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+        text-shadow: 2px 2px 4px #000000;
+    }
+    .logo{
+        width: 85px;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-2{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .col-2 .gambarHome{
+        width: 90%;
+    }
+    .color-box{
+        transform: translateX(160px);
+    }
+    .col-1{
+        flex-basis: 100%;
+    }
+    .col-1 h2{
+        font-size: 55px;
+    }
+    .col-1 h3{
+        font-size: 25px;
+    }
+    .col-1 p{
+        font-size: 15px;
+    }
+    #menuList{
+       overflow: hidden;
+       transition: 0.5s; 
+    }
+}
